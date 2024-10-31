@@ -62,8 +62,8 @@
 							custom2: '140%'
 						},
 						backgroundImage: {
-							'intro': "url('./assets/images/bg_intro.png')",
-							'contancts': "url('./assets/images/bg_contacts.png')"
+							'intro': "url('./src/assets/images/bg_intro.png')",
+							'contancts': "url('./src/assets/images/bg_contacts.png')"
 						}
 					}
 				}
