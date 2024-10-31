@@ -1,7 +1,7 @@
 <?php 
     $owner = [
         "name" => "Davi Rocha",
-        "description" => "Esse é meu primeiro projeto em PHP aqui na formação de PHP pela Rocketseat. Trabalho com tecnologia desde 2018, desenvolvendo e-commerces apoiados na plataforma Adobe Commerce (Magento2), mas focado em JavaScript e seus frameworks(K.O.js, jQuery e React.JS). É simples, mas foi feito com muito carinho ❤️❤️❤️",
+        "description" => "Esse é meu primeiro projeto em PHP aqui na formação de PHP pela Rocketseat. Trabalho com tecnologia desde 2018, desenvolvendo e-commerces apoiados na plataforma Adobe Commerce (Magento2), mas focado em JavaScript e seus frameworks(K.O.js, jQuery e React.JS). <br> É simples, mas foi feito com muito carinho ❤️",
         "avatar" => "https://avatars.githubusercontent.com/u/21270006?v=4",
         "links" => [
             "github" => "https://github.com/d-rocha/",
