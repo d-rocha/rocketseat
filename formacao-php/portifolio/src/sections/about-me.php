@@ -1,10 +1,10 @@
 <?php
 	$badges = [
-		'GitHub' => 'assets/icons/badges/github.svg',
-		'PHP' => 'assets/icons/badges/php.svg',
-		'CSS' => 'assets/icons/badges/css.svg',
-		'HTML' => 'assets/icons/badges/html.svg',
-		'Javascript' => 'assets/icons/badges/javascript.svg'
+		'GitHub' => 'src/assets/icons/badges/github.svg',
+		'PHP' => 'src/assets/icons/badges/php.svg',
+		'CSS' => 'src/assets/icons/badges/css.svg',
+		'HTML' => 'src/assets/icons/badges/html.svg',
+		'Javascript' => 'src/assets/icons/badges/javascript.svg'
 	];
 ?>
 
