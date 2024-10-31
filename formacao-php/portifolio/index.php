@@ -17,7 +17,7 @@
 					screens: {
 						sm: '480px',
 						md: '768px',
-						lg: '1280px',
+						lg: '1366px',
 						xl: '1440px',
 					},
 					fontFamily: {
@@ -58,7 +58,12 @@
 							}
 						},
 						lineHeight: {
-							custom: '120%'
+							custom1: '120%',
+							custom2: '140%'
+						},
+						backgroundImage: {
+							'intro': "url('./assets/images/bg_intro.png')",
+							'contancts': "url('./assets/images/bg_contacts.png')"
 						}
 					}
 				}
@@ -69,24 +74,8 @@
     <!-- Mock Data: Simulate API -->
     <?php  include "./config/data/data.php"; ?>
 
-    <body class="bg-slate-900 text-white font-sans">
-        <header class="mx-auto max-w-7xl px-3 py-6 flex justify-between items-center">
-            <div class="bg-slate-800 p-3 rounded-xl">
-                <span class="text-2xl font-bold">🎓 Formação PHP - Portifólio</span>
-            </div>
-
-            <nav class="links">
-                <ul class="flex gap-5">
-                    <?php foreach($owner['links'] as $name => $link): ?>
-                    <li>
-                        <a href="<?= $link; ?>" target="_blank" class="hover:text-violet-800">
-                            <span><?= ucfirst($name); ?></span>
-                        </a>
-                    </li>
-                    <?php endforeach; ?>
-                </ul>
-            </nav>
-        </header>
-
+    <body class="bg-gray-200">
+		<!-- Section: About me -->
+		<?php include "components/about-me.php" ?>
     </body>
 </html>
