@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Asap', sans-serif;
+    src: url('../../fonts/asap/Asap-Regular.ttf') format('ttf'),
+    url('../../fonts/asap/Asap-Black.ttf') format('ttf'),
+    url('../../fonts/asap/Asap-Bold.ttf') format('ttf'),
+    url('../../fonts/asap/Asap-ExtraBold.ttf') format('ttf'),
+    url('../../fonts/asap/Asap-Medium.ttf') format('ttf'),
+    url('../../fonts/asap/Asap-SemiBold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-style: swap;
+    font-optical-sizing: auto;
+}
+
+@font-face {
+    font-family: 'Inconsolata', serif;
+    src: url('../../fonts/inconsolata/Inconsolata-Regular.ttf') format('ttf'),
+    url('../../fonts/inconsolata/Inconsolata-Black.ttf') format('ttf'),
+    url('../../fonts/inconsolata/Inconsolata-Bold.ttf') format('ttf'),
+    url('../../fonts/inconsolata/Inconsolata-ExtraBold.ttf') format('ttf'),
+    url('../../fonts/inconsolata/Inconsolata-Medium.ttf') format('ttf'),
+    url('../../fonts/inconsolata/Inconsolata-SemiBold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-style: swap;
+    font-optical-sizing: auto;
+}
+
+@font-face {
+    font-family: 'MavenPro', serif;
+    src: url('../../fonts/mavenpro/MavenPro-Regular.ttf') format('ttf'),
+    url('../../fonts/mavenpro/MavenPro-Black.ttf') format('ttf'),
+    url('../../fonts/mavenpro/MavenPro-Bold.ttf') format('ttf'),
+    url('../../fonts/mavenpro/MavenPro-ExtraBold.ttf') format('ttf'),
+    url('../../fonts/mavenpro/MavenPro-Medium.ttf') format('ttf'),
+    url('../../fonts/mavenpro/MavenPro-SemiBold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-style: swap;
+    font-optical-sizing: auto;
+}
