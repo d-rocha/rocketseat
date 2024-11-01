@@ -48,6 +48,21 @@
 								green: '#82BC4F',
 								yellow: '#EABD5F'
 							},
+							tech: {
+								php: '#BB72E9',
+								csharp: '#953CAC',
+								nodejs: '#88C043',
+								laravel: '#F33B22',
+								nextjs: '#FFFFFF',
+								typescript: '#2D78C6',
+								javascript: '#EABD5F',
+								jsx: '#00D8Fe',
+								gatsby: '#663399',
+								sass: '#CC6698',
+								css: '#3996DB',
+								tailwind: '#17BFCB',
+								html: '#E3646E',
+							},
 							gray: {
 								100: '#0D0E11',
 								200: '#16181D',
