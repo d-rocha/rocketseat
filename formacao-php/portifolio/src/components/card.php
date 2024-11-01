@@ -1,4 +1,4 @@
-<div class="lg:w-[508px] lg:h-[180px] rounded-xl flex gap-x-4 p-3 bg-gray-300">
+<div class="lg:w-[508px] lg:h-[180px] rounded-xl flex gap-x-4 p-3 bg-gray-300 border hover:border hover:border-gray-400">
 	<div class="lg:w-[224px] lg:h-[156px] rounded-lg bg-gray-200">
 		<img 
 			src="<?= $project['thumbnail']; ?>"

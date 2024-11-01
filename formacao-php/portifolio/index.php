@@ -78,7 +78,7 @@
 						},
 						backgroundImage: {
 							'intro': "url('./src/assets/images/bg_intro.png')",
-							'contancts': "url('./src/assets/images/bg_contacts.png')"
+							'contact': "url('./src/assets/images/bg_contacts.png')"
 						}
 					}
 				}
@@ -95,5 +95,11 @@
 
 		<!-- Section: Projects -->
 		<?php include "src/sections/projects.php" ?>
+
+		<!-- Section: Contact -->
+		<?php include "src/sections/contact.php" ?>
+
+		<!-- Section: Footer -->
+		<?php include "src/sections/footer.php" ?>
     </body>
 </html>
