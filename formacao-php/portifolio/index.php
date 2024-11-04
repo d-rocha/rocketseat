@@ -89,6 +89,9 @@
     <!-- Mock Data: Simulate API -->
     <?php  include "./config/data/data.php"; ?>
 
+	<!-- Utils -->
+	<?php  include "./src/utils/utils.php"; ?>
+
     <body class="bg-gray-200">
 		<!-- Section: About me -->
 		<?php include "src/sections/about-me.php" ?>

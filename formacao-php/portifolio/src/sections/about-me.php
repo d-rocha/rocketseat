@@ -1,13 +1,3 @@
-<?php
-	$badges = [
-		'GitHub' => 'src/assets/icons/badges/github.svg',
-		'PHP' => 'src/assets/icons/badges/php.svg',
-		'CSS' => 'src/assets/icons/badges/css.svg',
-		'HTML' => 'src/assets/icons/badges/html.svg',
-		'Javascript' => 'src/assets/icons/badges/javascript.svg'
-	];
-?>
-
 <header class="bg-intro bg-cover mx-auto max-w-[1366px] lg:h-[682px]">
 	<div class="flex flex-col justify-center items-center py-[120px] px-[163px] mx-auto text-center">
 		<img 
