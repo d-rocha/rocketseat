@@ -28,7 +28,7 @@ Here you will find all PHP projects carried out at rocketseat.
 The goal is to create a Portfolio template for developers, with links to my professional contacts.
 
 #### Go to project
-https://github.com/d-rocha/rocketseat/tree/master/formacao-php/portifolio
+https://github.com/d-rocha/rocketseat/tree/master/formacao-php/portfolio
 
 
 <br/>

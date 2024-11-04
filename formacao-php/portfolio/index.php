@@ -87,10 +87,10 @@
     </head>
 
     <!-- Mock Data: Simulate API -->
-    <?php  include "./config/data/data.php"; ?>
+    <?php  require "./config/data/data.php"; ?>
 
 	<!-- Utils -->
-	<?php  include "./src/utils/utils.php"; ?>
+	<?php  require "./src/utils/utils.php"; ?>
 
     <body class="bg-gray-200">
 		<!-- Section: About me -->
