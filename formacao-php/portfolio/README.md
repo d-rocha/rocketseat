@@ -48,6 +48,14 @@ A data mock was created to simulate an API to populate the data for each section
 ## 📝 Figma
 https://www.figma.com/community/file/1426251628808157943
 
+## ✔️ Concepts practiced
+- Basic structure with HTML
+- Styling with Tailwind
+- Variables in PHP
+- Arrays
+- Functions
+- Components in PHP
+
 ## ⚙️ Techs:
 
 * __PHP__;
