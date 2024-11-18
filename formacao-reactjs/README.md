@@ -4,7 +4,7 @@
 
 <h3 align="center">
   <img alt="ReactJs" 
-    src="https://w7.pngwing.com/pngs/79/518/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.png" width="180px"/>
+    src="https://logospng.org/download/react/logo-react-256.png" width="180px"/>
 </h3>
 
 <h4 align="center">Projects</h4>
