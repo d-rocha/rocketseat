@@ -1,0 +1,82 @@
+.commentContainer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: calc(1rem + 8px);
+    
+}
+
+.commentWrapper {
+    flex: 1;
+}
+
+.commentContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--gray-750);
+    border-radius: 9px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.commentHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.commentHeader button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    line-height: 0;
+    border-radius: 2px;
+    color: var(--gray-400);
+}
+
+.commentHeader button:hover {
+    color: var(--red-500);
+}
+
+.commentInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.commentInfo strong {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    color: var(--white);
+    line-height: var(--line-height-base);
+}
+
+.commentInfo time {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-normal);
+    color: var(--gray-400);
+}
+
+.commentLike {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    color: var(--gray-400);
+    background-color: transparent;
+    border: 0;
+}
+
+.commentLike span {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    color: var(--gray-400);
+}
+
+.commentLike:focus {
+    box-shadow: none;
+}
+
+.commentLike:hover span,
+.commentLike:hover {
+    color: var(--green-500);
+}
