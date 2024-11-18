@@ -21,7 +21,7 @@
 
 Here you will find all ReactJS projects carried out at rocketseat.
 
-## 📓 Portfolio
+## 📓 Ignite Feed
 
 ### 🎯 Goal
 
