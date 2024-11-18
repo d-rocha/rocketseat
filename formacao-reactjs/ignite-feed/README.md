@@ -94,6 +94,9 @@ Then run yarn dev to start the application.
 yarn dev
 ```
 
+You can also see the application running live on vercel:
+https://ignite-feed-tan-mu.vercel.app/
+
 😃 Now run the project and...
 **BE HAPPY**.
 
