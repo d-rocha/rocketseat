@@ -10,7 +10,7 @@
 <h4 align="center">Projects</h4>
 
 <p align="center">
-  <a href="#-portfolio">
+  <a href="#-ignite-feed">
     <img src="https://img.shields.io/badge/IGNITE_FEED-00D8FF"/>
   </a>
 </p>
