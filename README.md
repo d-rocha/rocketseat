@@ -1,35 +1,25 @@
 <h3 align="center">
-  ReactJS
+  Rocketseat
 </h3>
 
 <h3 align="center">
-  <img alt="ReactJs" 
-    src="https://w7.pngwing.com/pngs/79/518/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.png" width="180px"/>
+  <img alt="Rocketseat" 
+    src="https://blog.rocketseat.com.br/content/images/2023/12/IMG_blog-4.png" width="180px"/>
 </h3>
 
-<h4 align="center">Projects</h4>
-
 <p align="center">
-  <a href="#-portfolio">
-    <img src="https://img.shields.io/badge/IGNITE_FEED-00D8FF"/>
-  </a>
+
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/d-rocha/rocketseat">
+
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/d-rocha/rocketseat">
+  
+  <img alt="GitHub repo size in bytes" src="https://img.shields.io/github/repo-size/d-rocha/rocketseat">
 </p>
 
-<hr/>
 
 ## 📋 About
 
-Here you will find all ReactJS projects carried out at rocketseat.
-
-## 📓 Ignite Feed
-
-### 🎯 Goal
-
-The goal is to create a social network feed, with the ability to make comments, delete comments and like comments.
-
-#### Go to project
-https://github.com/d-rocha/rocketseat/tree/master/formacao-reactjs/ignite-feed
-
+This is a repository to group all the projects from the rocketseat course in one place. Feel free to browse through them and learn about my solutions for each project taught by Rocketseat.
 
 <br/>
 
