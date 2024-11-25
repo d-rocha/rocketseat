@@ -4,10 +4,10 @@ import { Item } from '../Item/Item';
 
 import styles from './List.module.css'
 
-export function List({ items }) {
+export function List({ items, statusCounter, removeEvent, statusEvent }) {
     return (
         <div className={styles.listWrapper}>
-            <Info counter={items.length} />
+            <Info counter={items.length} status={statusCounter} />
 
             <div className={styles.listContent}>
                 {items.length > 0

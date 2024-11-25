@@ -28,6 +28,11 @@ export function Tasks() {
         setNewTask('')
     }
 
+    const statusCounter = tasks.reduce((prev, current) => {
+        if(current.isChecked) return prev + 1
+        return prev
+    }, 0)
+
     return (
         <main className={styles.tasksWrapper}>
             <NewItem  
@@ -38,6 +43,7 @@ export function Tasks() {
 
            <List 
                 items={tasks}
+                statusCounter={statusCounter}
             />
         </main>
     );
