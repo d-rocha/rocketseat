@@ -15,6 +15,8 @@ export function List({ items, statusCounter, removeEvent, statusEvent }) {
                         <Item 
                             key={item.id}
                             data={item}
+                            actionRemove={removeEvent}
+                            actionStatus={statusEvent}
                         />
                     ))
                     : <Empty />

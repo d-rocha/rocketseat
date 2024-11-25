@@ -28,6 +28,23 @@ export function Tasks() {
         setNewTask('')
     }
 
+    const handleRemoveItem = (id: number) => {
+        const updateTasks = tasks.filter(item => item.id !== id)    
+      
+        setTasks(updateTasks)
+    }
+
+    const handleItemStatus = (id: number, hasChecked: boolean) => {
+        const updateTasks = tasks.map(item => {
+            if(item.id === id)
+                return { ...item, isChecked: hasChecked }
+
+            return { ...item }
+        })
+
+        setTasks(updateTasks)
+    }
+
     const statusCounter = tasks.reduce((prev, current) => {
         if(current.isChecked) return prev + 1
         return prev
@@ -44,6 +61,8 @@ export function Tasks() {
            <List 
                 items={tasks}
                 statusCounter={statusCounter}
+                removeEvent={handleRemoveItem}
+                statusEvent={handleItemStatus}
             />
         </main>
     );
