@@ -1,0 +1,4 @@
+.newTaskWrapper {
+    display: flex;
+    gap: calc(1rem / 2);
+}
