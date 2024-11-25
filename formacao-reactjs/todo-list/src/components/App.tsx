@@ -1,7 +1,13 @@
 import { Header } from './Header/Header'
+import { Tasks } from './Tasks/Tasks'
 
 function App() {
-  return (<Header />)
+  return (
+    <>
+        <Header />
+        <Tasks />
+    </>
+  )
 }
 
 export default App

@@ -1,0 +1,7 @@
+.tasksWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    max-width: 46rem;
+    margin: -1.875rem auto 0rem;
+}
