@@ -1,0 +1,25 @@
+.headerContainer {
+    height: 200px;
+    background-color: var(--gray-700);
+}
+
+.logoWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    height: 100%;
+}
+
+.logoSpan span {
+    font-size: calc(2rem + 8px);
+    font-weight: 900;
+}
+
+.logoSpan span:first-child {
+    color: var(--blue);
+}
+
+.logoSpan span:last-child {
+    color: var(--purple-dark);
+}

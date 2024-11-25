@@ -1,5 +1,7 @@
+import { Header } from './Header/Header'
+
 function App() {
-  return (<h1>TODO LIST</h1>)
+  return (<Header />)
 }
 
 export default App
