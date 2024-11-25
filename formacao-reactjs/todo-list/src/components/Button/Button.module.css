@@ -1,0 +1,22 @@
+.todoButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: calc(1rem / 2);
+    background-color: var(--blue-dark);
+    border: 0;
+    border-radius: 8px;
+    width: 90px;
+    height: calc(3rem + 4px);
+    cursor: pointer;
+}
+
+.todoButton span {
+    color: var(--gray-100);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-base);
+}
+
+.todoButton:hover {
+    background-color: var(--blue);
+}
