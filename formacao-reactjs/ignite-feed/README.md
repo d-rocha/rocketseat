@@ -8,15 +8,13 @@
 </h3>
 
 <p align="center">
-<img alt="tech" src="https://img.shields.io/badge/Vite-292C34?logo=vite">
+  <img alt="tech" src="https://img.shields.io/badge/Vite-292C34?logo=vite">
 
-<img alt="tech" src="https://img.shields.io/badge/React-292C34?logo=react">
+  <img alt="tech" src="https://img.shields.io/badge/React-292C34?logo=react">
 
   <img alt="tech" src="https://img.shields.io/badge/CSS_Modules-292C34?logo=cssmodules">
-  
-  <img alt="tech" src="https://img.shields.io/badge/Date_FNS-292C34?logo=date-fns">
 
- 
+  <img alt="tech" src="https://img.shields.io/badge/Date_FNS-292C34?logo=date-fns">
 </p>
 
 <hr/>

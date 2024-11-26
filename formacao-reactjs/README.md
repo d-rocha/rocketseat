@@ -13,6 +13,9 @@
   <a href="#-ignite-feed">
     <img src="https://img.shields.io/badge/IGNITE_FEED-00D8FF"/>
   </a>
+  <a href="#-todo-list">
+    <img src="https://img.shields.io/badge/TODO_LIST-3178C6"/>
+  </a>
 </p>
 
 <hr/>
@@ -29,6 +32,16 @@ The goal is to create a social network feed, with the ability to make comments, 
 
 #### Go to project
 https://github.com/d-rocha/rocketseat/tree/master/formacao-reactjs/ignite-feed
+
+
+## 📓 TODO List
+
+### 🎯 Goal
+
+Create, delete, and cross off tasks in a list.
+
+#### Go to project
+https://github.com/d-rocha/rocketseat/tree/master/formacao-reactjs/todo-list
 
 
 <br/>
