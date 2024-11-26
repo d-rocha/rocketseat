@@ -4,6 +4,10 @@
     gap: 1.5rem;
 }
 
-.listContent {
-    
+
+@media (max-width: 768px) {
+    .listContent {
+        max-height: 350px;
+        overflow: scroll;
+    }
 }

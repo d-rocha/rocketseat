@@ -14,3 +14,9 @@
 .todoInput:focus {
     border-color: var(--purple-dark);
 }
+
+@media (max-width: 768px) {
+    .todoInput {
+        width: calc(16rem - 2px);
+    }
+}

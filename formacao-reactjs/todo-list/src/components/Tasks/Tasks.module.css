@@ -5,3 +5,9 @@
     max-width: 46rem;
     margin: -1.875rem auto 0rem;
 }
+
+@media (max-width: 768px) {
+    .tasksWrapper {
+        margin: -1.875rem 2rem 0rem;
+    }
+}

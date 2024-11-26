@@ -5,7 +5,7 @@ type Props = React.DetailedHTMLProps<
     HTMLInputElement
 >
 
-export function Input({...rest }: Props) {
+export function Input({ ...rest }: Props) {
     return (
         <input 
             placeholder="Adicione uma nova tarefa"
