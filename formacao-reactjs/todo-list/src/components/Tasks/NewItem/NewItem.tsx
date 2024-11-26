@@ -3,7 +3,13 @@ import { Button } from '../../Button/Button'
 
 import styles from './NewItem.module.css'
 
-export function NewItem({ changeEvent, clickEvent, inputValue }) {
+interface Props {
+    inputValue: string,
+    changeEvent: (evt: React.ChangeEvent<HTMLInputElement>) => void,
+    clickEvent: () => void
+}
+
+export function NewItem({ inputValue, changeEvent, clickEvent }: Props) {
     return (
         <div className={styles.newTaskWrapper}>
             <Input onChange={changeEvent} value={inputValue} maxLength={80}/>

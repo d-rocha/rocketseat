@@ -28,6 +28,10 @@ export function Tasks() {
         setNewTask('')
     }
 
+    const handeChangeInputValue = (evt: React.ChangeEvent<HTMLInputElement>) => {
+        setNewTask(evt.target.value)
+    }
+
     const handleRemoveItem = (id: number) => {
         const updateTasks = tasks.filter(item => item.id !== id)    
       
@@ -54,7 +58,7 @@ export function Tasks() {
         <main className={styles.tasksWrapper}>
             <NewItem  
                 inputValue={newTask}
-                changeEvent={evt => setNewTask(evt.target.value)}
+                changeEvent={handeChangeInputValue}
                 clickEvent={handleNewItem}
             />
 

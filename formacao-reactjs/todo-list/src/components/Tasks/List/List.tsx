@@ -1,10 +1,18 @@
 import { Info } from '../Info/Info';
 import { Empty } from '../Empty/Empty';
 import { Item } from '../Item/Item';
+import { ITask } from '../Tasks';
 
 import styles from './List.module.css'
 
-export function List({ items, statusCounter, removeEvent, statusEvent }) {
+interface Props {
+    items: Array<ITask>,
+    statusCounter: number,
+    removeEvent: (id: number) => void,
+    statusEvent: (id: number, hasChecked: boolean) => void
+}
+
+export function List({ items, statusCounter, removeEvent, statusEvent }: Props) {
     return (
         <div className={styles.listWrapper}>
             <Info counter={items.length} status={statusCounter} />
