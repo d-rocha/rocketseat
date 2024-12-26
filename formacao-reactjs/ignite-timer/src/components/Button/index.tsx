@@ -2,12 +2,12 @@ import { useContext } from 'react';
 import iconPlay from '../../assets/ic-play.svg';
 import iconStop from '../../assets/ic-stop.svg';
 
-import { TasksContext } from '../Task/NewTask';
+import { TaskContext } from '../Task';
 
 import { ButtonStart, ButtonCancel } from './styles';
 
 export function Button() {
-  const { taskItemActive, isSubmitDisabled, handleActionStop } = useContext(TasksContext);
+  const { taskItemActive, isSubmitDisabled, handleActionStop } = useContext(TaskContext);
 
   const label = !taskItemActive ? 'Começar' : 'Interromper';
 

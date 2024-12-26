@@ -1,12 +1,6 @@
 import styled from "styled-components";
 
-export const NewTaskContainer = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 3.5rem;
-
+export const NewTaskContainer = styled.div`
   label, input, p {
     color: ${props => props.theme["gray-100"]};
     font-size: 1.125rem;

@@ -1,11 +1,11 @@
-import { NewTask } from '../../components/Task/NewTask';
+import { Task } from '../../components/Task';
 
 import { HomeContainer } from './styles';
 
 export function Home(){
   return (
     <HomeContainer>
-      <NewTask />
+      <Task />
     </HomeContainer>
   )
 }
