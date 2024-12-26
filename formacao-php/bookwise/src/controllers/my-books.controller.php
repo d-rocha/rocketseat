@@ -1,0 +1,2 @@
+<?php
+	renderView("my-books");
