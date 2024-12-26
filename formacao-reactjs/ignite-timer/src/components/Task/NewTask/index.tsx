@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { createContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as zod from 'zod';
@@ -30,6 +30,18 @@ interface ITask {
   stopAt?: Date,
   endTime?: Date
 }
+
+interface ITasksContext {
+  taskItemActive: ITask | undefined,
+  taskItemActiveId: string | null,
+  minutesAmount: number,
+  isSubmitDisabled: boolean,
+  startDate: Date | undefined,
+  finishedTimeValidate: () => void,
+  handleActionStop: () => void,
+}
+
+export const TasksContext = createContext({} as ITasksContext);
 
 export function NewTask() {
   const [taskItem, setTaskItem] = useState<ITask[]>([]);
@@ -88,65 +100,69 @@ export function NewTask() {
     );
     setTaskItemActiveId(null);
   }
-    
-  const totalSeconds = taskItemActive ? taskItemActive.time * 60 : 0;
+
+  const minutesAmount = taskItemActive ? taskItemActive.time * 60 : 0;
   const startDate = taskItemActive ? taskItemActive.startAt : undefined;
   const isSubmitDisabled = !watch('task') && !taskItemActive;
 
   return (
-    <NewTaskContainer onSubmit={handleSubmit(handleActionSubmit)}>
-      <HeaderTaskWrapper>
-        <label htmlFor="task">Vou trabalhar em</label>
-        
-        <input 
-          id="task"
-          placeholder="Dê um nome para seu projeto"
-          list='task-suggestions'
-          {...register('task')}
-          disabled={!!taskItemActive}
-        />
-
-        <datalist id='task-suggestions'>
-          <option value="Projeto 1"></option>
-          <option value="Projeto 2"></option>
-          <option value="Projeto 3"></option>
-          <option value="Projeto 4"></option>
-        </datalist>
-
-        <label htmlFor="timer">durante</label>
-
-        <ActionTimerWrapper>
-          <button>
-            <img src={iconMinus} alt="Sinal de menos" />
-          </button>
+    <TasksContext.Provider
+      value={{
+        taskItemActive,
+        taskItemActiveId,
+        minutesAmount,
+        startDate,
+        isSubmitDisabled,
+        finishedTimeValidate,
+        handleActionStop
+      }}>
+      <NewTaskContainer onSubmit={handleSubmit(handleActionSubmit)}>
+        <HeaderTaskWrapper>
+          <label htmlFor="task">Vou trabalhar em</label>
           
           <input 
-            type="number"
-            id="time"
-            placeholder='00'
-            // step={5}
-            // min={5}
-            max={60}
-            {...register('time', { valueAsNumber: true })}
+            id="task"
+            placeholder="Dê um nome para seu projeto"
+            list='task-suggestions'
+            {...register('task')}
             disabled={!!taskItemActive}
           />
-          
-          <button>
-            <img src={iconPlus} alt="Sinal de mais" />
-          </button>
-        </ActionTimerWrapper>
 
-        <p>minutos.</p>
-      </HeaderTaskWrapper>
+          <datalist id='task-suggestions'>
+            <option value="Projeto 1"></option>
+            <option value="Projeto 2"></option>
+            <option value="Projeto 3"></option>
+            <option value="Projeto 4"></option>
+          </datalist>
 
-      <Countdown 
-        isTaskActive={!!taskItemActive}
-        startDate={startDate}
-        minutesAmount={totalSeconds} 
-        isSubmitDisabled={isSubmitDisabled}
-        handleEvent={handleActionStop}
-        finishTimeEvent={finishedTimeValidate}
-      />
-    </NewTaskContainer>
+          <label htmlFor="timer">durante</label>
+
+          <ActionTimerWrapper>
+            <button>
+              <img src={iconMinus} alt="Sinal de menos" />
+            </button>
+
+            <input
+              type="number"
+              id="time"
+              placeholder='00'
+              // step={5}
+              // min={5}
+              max={60}
+              {...register('time', { valueAsNumber: true })}
+              disabled={!!taskItemActive}
+            />
+
+            <button>
+              <img src={iconPlus} alt="Sinal de mais" />
+            </button>
+          </ActionTimerWrapper>
+
+          <p>minutos.</p>
+        </HeaderTaskWrapper>
+
+        <Countdown />
+      </NewTaskContainer>
+    </TasksContext.Provider>
   )
 }

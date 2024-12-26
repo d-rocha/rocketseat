@@ -1,5 +1,7 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { differenceInSeconds } from 'date-fns';
+
+import { TasksContext } from "../Task/NewTask";
 
 import { Button } from "../Button";
 
@@ -9,26 +11,17 @@ import {
   Timer,
   SplitTimer } from "./styles";
 
-interface Props {
-  isTaskActive: boolean,
-  startDate: Date | undefined,
-  minutesAmount: number,
-  isSubmitDisabled: boolean,
-  handleEvent?: () => void,
-  finishTimeEvent: () => void
-}
+export function Countdown() {
+  const {
+    taskItemActive,
+    startDate,
+    minutesAmount,
+    finishedTimeValidate
+  } = useContext(TasksContext);
 
-export function Countdown({ 
-  isTaskActive,
-  startDate,
-  minutesAmount,
-  isSubmitDisabled,
-  handleEvent,
-  finishTimeEvent 
-}: Props) {
   const [secondsPassed, setSecondsPassed] = useState(0);
 
-  const secondsCurrent = isTaskActive ? minutesAmount - secondsPassed : 0;
+  const secondsCurrent = taskItemActive ? minutesAmount - secondsPassed : 0;
 
   const minutes = Math.floor(secondsCurrent / 60);
   const seconds = secondsCurrent % 60;
@@ -41,7 +34,7 @@ export function Countdown({
 
     setSecondsPassed(0);
 
-    if(isTaskActive && startDate !== undefined) {
+    if(taskItemActive && startDate !== undefined) {
       interval = setInterval(() => {
         const secondsDiff = differenceInSeconds(
           new Date(),
@@ -49,7 +42,7 @@ export function Countdown({
         )
 
         if(secondsDiff >= minutesAmount) {
-          finishTimeEvent();
+          finishedTimeValidate();
         } else {
           setSecondsPassed(secondsDiff);
         }
@@ -59,17 +52,17 @@ export function Countdown({
 
     return () => { clearInterval(interval); }
 
-  }, [isTaskActive, startDate, minutesAmount, finishTimeEvent])
+  }, [taskItemActive, startDate, minutesAmount, finishedTimeValidate])
 
   useEffect(() => {
-    if (!isTaskActive) document.title = 'Ignite Timer';
-    if(isTaskActive) document.title = `${minutesRender}:${secondsRender}`;
+    if (!taskItemActive) document.title = 'Ignite Timer';
+    if(taskItemActive) document.title = `${minutesRender}:${secondsRender}`;
 
     if(parseInt(minutesRender) === 0 && parseInt(secondsRender) === 0) {
       setSecondsPassed(0)
     }
 
-  }, [isTaskActive, minutesRender, secondsRender])
+  }, [taskItemActive, minutesRender, secondsRender])
 
   return (
     <CountdownContainer>
@@ -85,11 +78,7 @@ export function Countdown({
         </Timer>
       </TimerWrapper>
     
-      <Button 
-        isDisabled={isSubmitDisabled} 
-        state={isTaskActive}
-        clickEvent={handleEvent}
-      />
+      <Button />
     </CountdownContainer>
   )
 }

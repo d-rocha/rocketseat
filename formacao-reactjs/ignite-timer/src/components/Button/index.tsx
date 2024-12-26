@@ -1,24 +1,23 @@
+import { useContext } from 'react';
 import iconPlay from '../../assets/ic-play.svg';
 import iconStop from '../../assets/ic-stop.svg';
 
+import { TasksContext } from '../Task/NewTask';
+
 import { ButtonStart, ButtonCancel } from './styles';
 
-interface Props {
-  state: boolean,
-  isDisabled?: boolean,
-  clickEvent?: () => void
-}
+export function Button() {
+  const { taskItemActive, isSubmitDisabled, handleActionStop } = useContext(TasksContext);
 
-export function Button({ state, isDisabled, clickEvent }: Props) {
-  const label = !state ? 'Começar' : 'Interromper';
+  const label = !taskItemActive ? 'Começar' : 'Interromper';
 
-  const ContextButton = !state 
-    ? <ButtonStart type='submit'disabled={isDisabled}>
+  const ContextButton = !taskItemActive 
+    ? <ButtonStart type='submit'disabled={isSubmitDisabled}>
         <img src={iconPlay} alt={label} />
         {label}
       </ButtonStart>
 
-    : <ButtonCancel type='button' onClick={clickEvent}>
+    : <ButtonCancel type='button' onClick={handleActionStop}>
         <img src={iconStop} alt={label} />
         {label}
       </ButtonCancel>
