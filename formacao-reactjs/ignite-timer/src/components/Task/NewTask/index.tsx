@@ -46,8 +46,8 @@ export function NewTask() {
             type="number"
             id="time"
             placeholder='00'
-            // step={5}
-            // min={5}
+            step={5}
+            min={5}
             max={60}
             {...register('time', { valueAsNumber: true })}
             disabled={!!taskItemActive}

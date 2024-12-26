@@ -1,9 +1,12 @@
-import { TaskItemContainer, TaskItemStatus } from "./styles";
+import { formatDistanceToNow } from 'date-fns';
+import { ptBR } from 'date-fns/locale';
+
+import { TaskItemContainer, TaskItemStatus } from './styles';
 
 interface Props {
-  title?: string,
-  duration?: string,
-  startAt?: string,
+  title: string,
+  duration: number,
+  startAt: string,
   status: string
 }
 
@@ -17,8 +20,8 @@ export function TaskItem({ title, duration, startAt, status }: Props) {
   return (
     <TaskItemContainer>
       <li>{title}</li>
-      <li>{duration}</li>
-      <li>{startAt}</li>
+      <li>{`${duration} minutos`}</li>
+      <li>{formatDistanceToNow(startAt, { addSuffix: true, locale: ptBR })}</li>
       <li>
         <TaskItemStatus color={status}>
           {statusTask[status]}
