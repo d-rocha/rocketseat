@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { useFormContext } from 'react-hook-form';
 
-import { TaskContext } from '..';
+import { TaskContext } from '../../../contexts/TaskContext';
 
 import iconMinus from '../../../assets/ic-minus.svg';
 import iconPlus from '../../../assets/ic-plus.svg';

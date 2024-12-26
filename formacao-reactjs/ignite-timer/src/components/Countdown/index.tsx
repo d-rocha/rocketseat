@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { differenceInSeconds } from 'date-fns';
 
-import { TaskContext } from "../Task";
+import { TaskContext } from "../../contexts/TaskContext";
 
 import { Button } from "../Button";
 
@@ -11,7 +11,11 @@ import {
   Timer,
   SplitTimer } from "./styles";
 
-export function Countdown() {
+interface IProps {
+  isSubmitDisabled: boolean
+}
+
+export function Countdown({ isSubmitDisabled }:IProps) {
   const {
     taskItemActive,
     startDate,
@@ -78,7 +82,7 @@ export function Countdown() {
         </Timer>
       </TimerWrapper>
     
-      <Button />
+      <Button isSubmitDisabled={isSubmitDisabled} />
     </CountdownContainer>
   )
 }
