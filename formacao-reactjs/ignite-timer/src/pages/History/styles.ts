@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const HistoryContainer = styled.main`
   display: flex;
@@ -7,10 +7,16 @@ export const HistoryContainer = styled.main`
   gap: 2rem;
   padding: 3.5rem;
 
+  @media screen and (max-width: 768px) {
+    padding: 0;
+    margin-top: 2.5rem;
+    gap: 1rem;
+  }
+
   h1 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: ${props => props.theme["gray-100"]};
+    color: ${props => props.theme['gray-100']};
   }
 `;
 
@@ -24,7 +30,7 @@ export const TableHead = styled.div`
   height: 3.375rem;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  background-color: ${props => props.theme["gray-600"]};
+  background-color: ${props => props.theme['gray-600']};
   
   span {
     font-size: 0.875rem;
@@ -32,7 +38,7 @@ export const TableHead = styled.div`
     line-height: 1.6;
     text-align: left;
     padding: 1rem;
-    color: ${props => props.theme["gray-100"]};
+    color: ${props => props.theme['gray-100']};
     width: 25%;
 
     &:first-child {
@@ -59,8 +65,16 @@ export const TableBody = styled.div`
   }
   
   &::-webkit-scrollbar-thumb {
-    background-color: ${props => props.theme["green-500"]};
+    background-color: ${props => props.theme['green-500']};
     border: none;
     border-radius: 12px;
   }
+`;
+
+export const CardContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 26rem;
+  overflow: auto;
 `;

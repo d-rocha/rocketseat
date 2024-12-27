@@ -1,12 +1,12 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const TaskItemContainer = styled.ul`
   display: flex;
   align-items: center;
   height: 3.375rem;
-  border-top: 4px solid ${props => props.theme["gray-800"]};
+  border-top: 4px solid ${props => props.theme['gray-800']};
   padding-left: 1rem;
-  background-color: ${props => props.theme["gray-700"]};
+  background-color: ${props => props.theme['gray-700']};
 
   &:last-child {
     border-bottom-left-radius: 8px;
@@ -19,7 +19,7 @@ export const TaskItemContainer = styled.ul`
     line-height: 1.6;
     text-align: left;
     padding: 1rem;
-    color: ${props => props.theme["gray-300"]};
+    color: ${props => props.theme['gray-300']};
     width: 25.7%;
 
     &:first-child {
@@ -55,5 +55,25 @@ export const TaskItemStatus = styled.span<StatusProps>`
 
     background-color: ${props => props.theme[STATUS_COLORS[props.color]]};
     border-radius: 100%;
+  }
+`;
+
+export const TaskItemCard = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 1px solid ${props => props.theme['green-300']};
+  border-radius: 8px;
+  padding: 10px;
+`;
+
+export const CardItem = styled.li`
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    &:first-child {
+      font-weight: 700;
+    }
   }
 `;

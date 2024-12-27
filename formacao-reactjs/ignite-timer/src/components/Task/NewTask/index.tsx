@@ -9,7 +9,7 @@ import iconPlus from '../../../assets/ic-plus.svg';
 import { 
   NewTaskContainer,
   HeaderTaskWrapper,
-  ActionTimerWrapper } from "./styles";
+  ActionTimerWrapper } from './styles';
 
 export function NewTask() {
   const { taskItemActive } = useContext(TaskContext);
@@ -18,33 +18,33 @@ export function NewTask() {
   return (
     <NewTaskContainer>
       <HeaderTaskWrapper>
-        <label htmlFor="task">Vou trabalhar em</label>
+        <label htmlFor='task'>Vou trabalhar em</label>
 
         <input
-          id="task"
-          placeholder="Dê um nome para seu projeto"
+          id='task'
+          placeholder='Dê um nome para seu projeto'
           list='task-suggestions'
           {...register('task')}
           disabled={!!taskItemActive}
         />
 
         <datalist id='task-suggestions'>
-          <option value="Projeto 1"></option>
-          <option value="Projeto 2"></option>
-          <option value="Projeto 3"></option>
-          <option value="Projeto 4"></option>
+          <option value='Projeto 1'></option>
+          <option value='Projeto 2'></option>
+          <option value='Projeto 3'></option>
+          <option value='Projeto 4'></option>
         </datalist>
 
-        <label htmlFor="timer">durante</label>
+        <label htmlFor='timer'>durante</label>
 
         <ActionTimerWrapper>
           <button>
-            <img src={iconMinus} alt="Sinal de menos" />
+            <img src={iconMinus} alt='Sinal de menos' />
           </button>
 
           <input
-            type="number"
-            id="time"
+            type='number'
+            id='time'
             placeholder='00'
             step={5}
             min={5}
@@ -54,7 +54,7 @@ export function NewTask() {
           />
 
           <button>
-            <img src={iconPlus} alt="Sinal de mais" />
+            <img src={iconPlus} alt='Sinal de mais' />
           </button>
         </ActionTimerWrapper>
 

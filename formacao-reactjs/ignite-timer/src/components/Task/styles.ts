@@ -6,4 +6,8 @@ export const TaskContainer = styled.form`
   align-items: center;
   flex-wrap: wrap;
   gap: 3.5rem;
+
+  @media screen and (max-width: 768px) {
+    /* gap: 1rem; */
+  }
 `;

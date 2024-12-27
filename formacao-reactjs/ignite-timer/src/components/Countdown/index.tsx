@@ -1,15 +1,15 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from 'react';
 import { differenceInSeconds } from 'date-fns';
 
-import { TaskContext } from "../../contexts/TaskContext";
+import { TaskContext } from '../../contexts/TaskContext';
 
-import { Button } from "../Button";
+import { Button } from '../Button';
 
 import { 
   CountdownContainer,
   TimerWrapper,
   Timer,
-  SplitTimer } from "./styles";
+  SplitTimer } from './styles';
 
 interface IProps {
   isSubmitDisabled: boolean

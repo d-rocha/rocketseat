@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
   display: flex;
@@ -25,12 +25,12 @@ export const NavContainer = styled.nav`
     border-bottom: 3px solid transparent;
 
     &:hover {
-      border-bottom: 3px solid ${props => props.theme["green-500"]};
+      border-bottom: 3px solid ${props => props.theme['green-500']};
     }
 
     &.active {
       img {
-        filter: ${props => props.theme["filter-green"]};
+        filter: ${props => props.theme['filter-green']};
       }
     }
   }

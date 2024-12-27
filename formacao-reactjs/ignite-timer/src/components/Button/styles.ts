@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const ButtonBase = styled.button`
   display: flex;
@@ -9,7 +9,7 @@ const ButtonBase = styled.button`
   height: 4rem;
   border-radius: 8px;
   border: 0;
-  color: ${props => props.theme["gray-100"]};
+  color: ${props => props.theme['gray-100']};
 
   &:disabled {
     opacity: 0.7;
@@ -18,17 +18,17 @@ const ButtonBase = styled.button`
 `;
 
 export const ButtonStart = styled(ButtonBase)`
-  background-color: ${props => props.theme["green-500"]};
+  background-color: ${props => props.theme['green-500']};
     
   &:hover {
-    background-color: ${props => props.theme["green-700"]};
+    background-color: ${props => props.theme['green-700']};
   }
 `;
 
 export const ButtonCancel = styled(ButtonBase)`
-  background-color: ${props => props.theme["red-500"]};
+  background-color: ${props => props.theme['red-500']};
     
   &:hover {
-    background-color: ${props => props.theme["red-700"]};
+    background-color: ${props => props.theme['red-700']};
   }
 `;
